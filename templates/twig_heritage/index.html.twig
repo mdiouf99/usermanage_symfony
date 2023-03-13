@@ -1,0 +1,21 @@
+{#herite de la page heritage.html.twig#}
+{% extends 'heritage.html.twig' %}
+
+{% block titreDuDocument %}
+Nouveau Titre
+{% endblock%}
+
+{% block CorpDuDocument %}
+{#recupere le contenu du parent#}
+    {{
+        parent()
+    }}
+    <ol>
+        <li>Nouveau contenu</li>
+        <li>J'adore l'heritage dans twig</li>
+    </ol>
+    {# un template qui etend un autre template ne peut pas avoir du contenu hors des block#}
+    <{#div>
+    <p>j'adore twig</p>
+</div>#}
+{% endblock %}

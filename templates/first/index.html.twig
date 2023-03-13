@@ -1,0 +1,14 @@
+{% extends'template.html.twig' %}
+{% block title %}
+   {firstname}} {{name}}
+{% endblock %}
+
+{% block PageTitle %}
+    Welcome
+{% endblock %}
+
+{% block body %}
+    <h1>with love from {{firstname}} {{name}} </h1>
+    <p>Bonjour Mohamed</p>
+    Mon  url absolue est : {{ url('first')}}
+{% endblock %}
